@@ -1,0 +1,195 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Gremlin-Android by wuman</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+
+      <header>
+        <h1>Gremlin-Android</h1>
+        <p>A Graph Traversal Language</p>
+      </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="https://github.com/wuman/gremlin-android" class="button fork"><strong>View On GitHub</strong></a>
+        <div class="downloads">
+          <span>Downloads:</span>
+          <ul>
+            <li><a href="https://github.com/wuman/gremlin-android/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/wuman/gremlin-android/tarball/master" class="button">TAR</a></li>
+          </ul>
+        </div>
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
+        <h1>Gremlin-Android</h1>
+
+<p><img src="https://github.com/wuman/gremlin-android/raw/master/doc/images/gremlin-logo.png" alt="Feature Image"></p>
+
+<p>Gremlin-Android is a port of <a href="https://github.com/tinkerpop/gremlin">Gremlin</a>
+for the Android platform. It is still under development so use it at your
+own risk. Currently only gremlin-android-java is supported because I have
+not yet been able to port groovy on Android. I have heard of projects like
+<a href="http://code.google.com/p/discobot/">discobot</a> but as far as I know the
+project has little to none activity now. You may refer to Gremlin's
+<a href="https://github.com/tinkerpop/gremlin/wiki/Using-Gremlin-through-Java">Java usage</a>
+page.</p>
+
+<h2>Including in Your Project</h2>
+
+<p>There are two ways to include the library in your projects:</p>
+
+<ol>
+<li>You can download the released jar file in the <a href="https://github.com/wuman/gremlin-android/downloads">Downloads section</a>.</li>
+<li>
+<p>If you use Maven to build your project you can simply add a dependency to 
+the desired component of the library.</p>
+
+<pre><code>&lt;dependency&gt;
+    &lt;groupId&gt;com.wu-man&lt;/groupId&gt;
+    &lt;artifactId&gt;gremlin-android-java&lt;/artifactId&gt;
+    &lt;version&gt;2.1.0.0&lt;/version&gt;
+&lt;/dependency&gt;
+</code></pre>
+</li>
+</ol><h2>What is Gremlin</h2>
+
+<p>Gremlin is a domain specific language for traversing property 
+<a href="http://en.wikipedia.org/wiki/Graph_%28mathematics%29">graphs</a>. Gremlin makes 
+use of <a href="http://pipes.tinkerpop.com">Pipes</a> to perform complex graph traversals. 
+This language has application in the areas of graph query, analysis, and 
+manipulation. Connectors, provided by <a href="http://blueprints.tinkerpop.com">Blueprints</a>
+and <a href="http://wuman.github.com/blueprints-android/">Blueprints-Android</a>, exist 
+for the following graph management systems:</p>
+
+<ul>
+<li>Graph database connectivity:
+
+<ul>
+<li>
+<a href="https://github.com/tinkerpop/blueprints/wiki/TinkerGraph">TinkerGraph</a> in-memory graph</li>
+<li>
+<a href="http://neo4j.org/">Neo4j</a> graph database</li>
+<li>
+<a href="http://www.orientechnologies.com/">OrientDB</a> graph database</li>
+<li>
+<a href="http://www.sparsity-technologies.com/dex">DEX</a> graph database</li>
+<li>
+<a href="http://www.infinitegraph.com/">InfiniteGraph</a> graph database</li>
+<li>
+<a href="http://thinkaurelius.github.com/titan/">Titan</a> graph database</li>
+<li>
+<a href="http://rexster.tinkerpop.com">Rexster</a> graph server</li>
+<li>
+<a href="http://www.openrdf.org">Sesame 2.0</a> compliant RDF stores</li>
+</ul>
+</li>
+<li>Supporting extensions:
+
+<ul>
+<li>
+<a href="http://graphml.graphdrawing.org/">GraphML Reader/Writer</a> library</li>
+<li>
+<a href="http://www.json.org/">GraphSON Reader/Writer</a> library</li>
+<li>
+<a href="http://en.wikipedia.org/wiki/Graph_Modelling_Language">GML Reader/Writer</a> library</li>
+<li>
+<a href="http://jung.sourceforge.net/">Java Universal/Graph</a> framework</li>
+</ul>
+</li>
+<li>JVM language connectivity:
+
+<ul>
+<li>
+<a href="http://java.com/">Java</a>: Gremlin in the Java Language</li>
+<li>
+<a href="http://groovy.codehaus.org/">Groovy</a>: Gremlin in the Groovy Language</li>
+<li>Easy to connect to other <a href="http://en.wikipedia.org/wiki/List_of_JVM_languages">JVM languages</a>
+</li>
+</ul>
+</li>
+</ul><p>The documentation for Gremlin can be found at this <a href="http://gremlin.tinkerpop.com">location</a>. 
+Finally, please visit <a href="http://tinkerpop.com">TinkerPop</a> for other software products.</p>
+
+<h2>Developed By</h2>
+
+<ul>
+<li>Android porting contributor
+
+<ul>
+<li>David Wu - <a href="mailto:david@wu-man.com">david@wu-man.com</a> - <a href="http://blog.wu-man.com">http://blog.wu-man.com</a>
+</li>
+</ul>
+</li>
+<li>Original contributor to Gremlin
+
+<ul>
+<li>Marko A. Rodriguez - <a href="mailto:marko@markorodriguez.com">marko@markorodriguez.com</a> - <a href="http://markorodriguez.com">http://markorodriguez.com</a>
+</li>
+</ul>
+</li>
+</ul><h2>License</h2>
+
+<pre><code>Copyright 2012, David Wu
+Copyright (c) 2009-2012, TinkerPop [http://tinkerpop.com]
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+    * Redistributions of source code must retain the above copyright
+      notice, this list of conditions and the following disclaimer.
+    * Redistributions in binary form must reproduce the above copyright
+      notice, this list of conditions and the following disclaimer in the
+      documentation and/or other materials provided with the distribution.
+    * Neither the name of the TinkerPop nor the
+      names of its contributors may be used to endorse or promote products
+      derived from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL TINKERPOP BE LIABLE FOR ANY
+DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+</code></pre>
+      </section>
+      <footer>
+        <p>Project maintained by <a href="https://github.com/wuman">wuman</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-4156099-13");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
