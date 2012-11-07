@@ -9,8 +9,8 @@ own risk. Currently only gremlin-android-java is supported because I have
 not yet been able to port groovy on Android. I have heard of projects like
 [discobot](http://code.google.com/p/discobot/) but as far as I know the
 project has little to none activity now. You may refer to Gremlin's
-[Java usage](https://github.com/tinkerpop/gremlin/wiki/Using-Gremlin-through-Java)
-page.
+Java usage pages [1](https://github.com/tinkerpop/gremlin/wiki/Using-Gremlin-through-Java)
+[2](https://github.com/tinkerpop/gremlin/wiki/JVM-Language-Implementations).
 
 
 Including in Your Project
