@@ -1,7 +1,7 @@
 Gremlin-Android
 ===============
 
-![Feature Image](https://github.com/wuman/gremlin-android/raw/master/doc/images/gremlin-logo.png)
+![Feature Image](https://github.com/wuman/gremlin-android/raw/master/doc/images/gremlin-android-logo.png)
 
 Gremlin-Android is a port of [Gremlin](https://github.com/tinkerpop/gremlin)
 for the Android platform. It is still under development so use it at your
